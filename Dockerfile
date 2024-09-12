@@ -4,8 +4,10 @@ WORKDIR /app
 
 COPY *.json .
 
-RUN npm install -y
+RUN npm install
 
 COPY . .
+
+EXPOSE 7000
 
 CMD [ "node", "index.js" ]
