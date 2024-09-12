@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 
 function alive() {
   const server = http.createServer(app)
-  server.listen(process.env.PORT || 8080, () => {
-    console.log(`Server is running on port ${process.env.PORT || 8080}\nhttp://localhost:${process.env.PORT || 8080}`)
+  server.listen(7000, () => {
+    console.log(`Server is running on port ${7000}\nhttp://localhost:7000`)
   })
 }
 
