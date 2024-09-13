@@ -1,15 +1,16 @@
 const express = require('express')
 const http = require('http')
+const PORT = 7000
 
 const app = express()
 app.get('/', (req, res) => {
-  res.send('jalan cuy')
+  res.send('Bot Is Alive ✅')
 })
 
 function alive() {
   const server = http.createServer(app)
-  server.listen(7000, () => {
-    console.log(`Server is running on port ${7000}\nhttp://localhost:7000`)
+  server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}\nhttp://localhost:${PORT}`)
   })
 }
 
